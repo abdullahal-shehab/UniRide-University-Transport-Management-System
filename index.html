@@ -95,6 +95,13 @@
     footer { border-top: 1px solid var(--border); background: rgba(255, 255, 255, .7); padding: 28px 24px; text-align: center; }
     .team { font-size: .88rem; color: var(--muted); margin: 0 0 6px; }
     .team strong { color: var(--text); font-weight: 600; }
+    .team-list {
+      list-style: none; margin: 12px auto 18px; padding: 0; max-width: 900px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px;
+    }
+    .team-list li { padding: 12px; background: #fff; border: 1px solid var(--border); border-radius: 12px; }
+    .team-list span { display: block; font-size: .9rem; font-weight: 600; color: var(--text); }
+    .team-list small { font-size: .78rem; color: var(--muted); }
     .copy { font-size: .8rem; color: #94a3b8; margin: 0; }
 
     @media (max-width: 520px) {
@@ -148,7 +155,13 @@
   </main>
 
   <footer>
-    <p class="team"><strong>Developed by</strong> Sarkar Rafia Tasnim Ripa &middot; Mst. Rubiya Nusrat Riya &middot; Abdullah Al Shehab</p>
+    <p class="team"><strong>Developed by</strong></p>
+    <ul class="team-list">
+      <li><span>Sarkar Rafia Tasnim Ripa</span><small>2023100000384</small></li>
+      <li><span>Mst. Rubiya Nusrat Riya</span><small>2023100000382</small></li>
+      <li><span>Farjana Binte Anis</span><small>2023200000101</small></li>
+      <li><span>Abdullah Al Shehab</span><small>2023200000471</small></li>
+    </ul>
     <p class="copy">&copy; 2026 UniRide. All rights reserved.</p>
   </footer>
 </body>
