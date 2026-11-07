@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UniRide - University Transport Management System">
+    <title>UniRide - Smarter Campus Travel, Connected Everywhere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo" aria-label="UniRide Home">
+                <svg class="nav__logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 6L16 16L22 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="nav__logo-text">UniRide</span>
+            </a>
+            <div class="nav__actions">
+                <a href="login.html" class="btn btn--ghost">Sign In</a>
+                <a href="login.html?register=true" class="btn btn--primary">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <span class="hero__badge">University Transport Management System</span>
+                    <h1 class="hero__title">Smarter Campus Travel,<br>Connected Everywhere.</h1>
+                    <p class="hero__description">UniRide streamlines university transportation with real-time bus tracking, seat booking, route management, and analytics — all in one platform for students, faculty, and transport staff.</p>
+                    <div class="hero__actions">
+                        <a href="login.html?register=true" class="btn btn--primary btn--large">Start Free Trial</a>
+                        <a href="#features" class="btn btn--outline btn--large">Explore Features</a>
+                    </div>
+                    <div class="hero__platforms">
+                        <span class="hero__platform-label">Available on:</span>
+                        <div class="hero__platform-icons">
+                            <span class="platform-icon" title="Windows Desktop">🖥️</span>
+                            <span class="platform-icon" title="Android Mobile">📱</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__visual" aria-hidden="true">
+                    <div class="hero__mockup">
+                        <div class="mockup__header">
+                            <div class="mockup__dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="mockup__content">
+                            <div class="mockup__map"></div>
+                            <div class="mockup__sidebar">
+                                <div class="mockup__bus">
+                                    <span class="mockup__bus-number">Bus 101</span>
+                                    <div class="mockup__route">Main Campus → Tech Park</div>
+                                    <div class="mockup__eta">Arriving in 3 min</div>
+                                </div>
+                                <div class="mockup__bus">
+                                    <span class="mockup__bus-number">Bus 102</span>
+                                    <div class="mockup__route">Library → Student Center</div>
+                                    <div class="mockup__eta">Arriving in 8 min</div>
+                                </div>
+                                <div class="mockup__bus">
+                                    <span class="mockup__bus-number">Bus 103</span>
+                                    <div class="mockup__route">Dormitory → Main Gate</div>
+                                    <div class="mockup__eta">Arriving in 12 min</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Everything You Need for Campus Transport</h2>
+                    <p class="section-subtitle">12 comprehensive modules designed for university transportation management</p>
+                </header>
+                <div class="features__grid">
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Student & Faculty Management</h3>
+                        <p class="feature-card__description">Complete user lifecycle — registration, profiles, roles, booking history, and account status management.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="M6 8h12M6 12h12M6 16h8"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Bus Booking & Seat Management</h3>
+                        <p class="feature-card__description">Interactive seat maps, real-time availability, transaction-safe booking, cancellations, and PDF tickets.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Trip & Schedule Management</h3>
+                        <p class="feature-card__description">Create, edit, and reschedule trips with conflict detection, booking windows, and passenger manifests.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Transport Officer Dashboard</h3>
+                        <p class="feature-card__description">Real-time overview: bus count, active trips, occupancy rates, attendance, no-shows, and announcements.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Driver & Helper Management</h3>
+                        <p class="feature-card__description">Profiles, licenses, duty rosters, trip assignments, and conflict detection for transport staff.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Route & Stop Management</h3>
+                        <p class="feature-card__description">CRUD routes and stops, pickup/drop-off points, stop-wise timing, and interactive map visualization.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                                <circle cx="18" cy="18" r="3" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Live Bus Tracking</h3>
+                        <p class="feature-card__description">Driver GPS updates via Realtime Database, Leaflet maps, bus markers, route visualization, and ETA calculation.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Bus Delay Notifications</h3>
+                        <p class="feature-card__description">Automated delay, cancellation, and route change alerts via in-app notifications and Firebase Cloud Messaging.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10"/>
+                                <line x1="12" y1="20" x2="12" y2="4"/>
+                                <line x1="6" y1="20" x2="6" y2="14"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Transport Analytics</h3>
+                        <p class="feature-card__description">Route demand, occupancy percentages, underutilized buses, and daily/weekly/monthly trends with Chart.js.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Route Subscription</h3>
+                        <p class="feature-card__description">Save preferred routes and stops, subscribe/unsubscribe, view upcoming trips, and receive route-specific alerts.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Reports & Export</h3>
+                        <p class="feature-card__description">Generate PDF and Excel reports for trip occupancy, ridership, duty rosters, attendance, and booking summaries.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card__title">Security & Administration</h3>
+                        <p class="feature-card__description">Role-based access, audit logs, booking policies, password reset, backup/restore, and rate limiting.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="roles">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Role-Based Dashboards</h2>
+                    <p class="section-subtitle">Tailored experiences for every user in the university transport ecosystem</p>
+                </header>
+                <div class="roles__grid">
+                    <article class="role-card">
+                        <div class="role-card__header">
+                            <div class="role-card__avatar">🎓</div>
+                            <h3 class="role-card__title">Student</h3>
+                        </div>
+                        <ul class="role-card__features">
+                            <li>Search & book trips</li>
+                            <li>Interactive seat selection</li>
+                            <li>Download PDF tickets</li>
+                            <li>Track buses in real-time</li>
+                            <li>Subscribe to routes</li>
+                            <li>Receive delay alerts</li>
+                        </ul>
+                    </article>
+                    <article class="role-card">
+                        <div class="role-card__header">
+                            <div class="role-card__avatar">👨‍🏫</div>
+                            <h3 class="role-card__title">Faculty</h3>
+                        </div>
+                        <ul class="role-card__features">
+                            <li>Priority seat booking</li>
+                            <li>View booking history</li>
+                            <li>Manage profile</li>
+                            <li>Route subscriptions</li>
+                            <li>In-app notifications</li>
+                        </ul>
+                    </article>
+                    <article class="role-card">
+                        <div class="role-card__header">
+                            <div class="role-card__avatar">🚌</div>
+                            <h3 class="role-card__title">Transport Officer</h3>
+                        </div>
+                        <ul class="role-card__features">
+                            <li>Manage buses & trips</li>
+                            <li>Assign drivers & helpers</li>
+                            <li>Monitor attendance</li>
+                            <li>Generate reports</li>
+                            <li>Publish announcements</li>
+                        </ul>
+                    </article>
+                    <article class="role-card">
+                        <div class="role-card__header">
+                            <div class="role-card__avatar">🚗</div>
+                            <h3 class="role-card__title">Driver</h3>
+                        </div>
+                        <ul class="role-card__features">
+                            <li>View assigned trips</li>
+                            <li>Share GPS location</li>
+                            <li>Update trip status</li>
+                            <li>View passenger info</li>
+                        </ul>
+                    </article>
+                    <article class="role-card">
+                        <div class="role-card__header">
+                            <div class="role-card__avatar">🤝</div>
+                            <h3 class="role-card__title">Helper</h3>
+                        </div>
+                        <ul class="role-card__features">
+                            <li>View assigned trips</li>
+                            <li>Passenger lists</li>
+                            <li>Attendance assistance</li>
+                        </ul>
+                    </article>
+                    <article class="role-card">
+                        <div class="role-card__header">
+                            <div class="role-card__avatar">🔐</div>
+                            <h3 class="role-card__title">Administrator</h3>
+                        </div>
+                        <ul class="role-card__features">
+                            <li>User & role management</li>
+                            <li>System configuration</li>
+                            <li>Audit logs review</li>
+                            <li>Backup & restore</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Ready to Transform Campus Transport?</h2>
+                    <p class="cta__description">Join universities worldwide using UniRide for smarter, safer, and more efficient student transportation.</p>
+                    <a href="login.html?register=true" class="btn btn--primary btn--large">Get Started Free</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <a href="index.html" class="footer__logo">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 6L16 16L22 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>UniRide</span>
+                </a>
+                <p class="footer__tagline">Smarter Campus Travel, Connected Everywhere.</p>
+            </div>
+            <nav class="footer__nav">
+                <div class="footer__nav-group">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="docs/installation-guide.md">Installation</a></li>
+                        <li><a href="docs/API-documentation.md">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-group">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="docs/system-architecture.md">Architecture</a></li>
+                        <li><a href="docs/security-design.md">Security</a></li>
+                        <li><a href="docs/database-design.md">Database</a></li>
+                    </ul>
+                </div>
+                <div class="footer__nav-group">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer__team">
+                <h4>Developed By</h4>
+                <ul class="team-list">
+                    <li>Sarkar Rafia Tasnim Ripa — 2023100000384</li>
+                    <li>Mst. Rubiya Nusrat Riya — 2023100000382</li>
+                    <li>Abdullah Al Shehab — 2023200000471</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 UniRide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
